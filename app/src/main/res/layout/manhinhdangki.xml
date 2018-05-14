@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/img_dangnhap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="46"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imgThoatManHinhDangKy"
+            android:background="@drawable/btn_clicked"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Đăng ký"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:weightSum="68"
+        android:paddingTop="40dp"
+        android:paddingBottom="120dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+
+        <EditText
+            android:id="@+id/etxtTaiKhoanMailDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang"
+            android:layout_weight="12"
+            android:hint="Email"
+            android:textColorHint="@color/mauTrang"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etxtMatKhauDangKy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/mauTrang"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+        <EditText
+            android:id="@+id/etxtXacNhanMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/mauTrang"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+        <EditText
+            android:id="@+id/etxtTenHienThi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="Tên hiển thị"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/mauTrang"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+
+        <Button
+            android:id="@+id/btnDangKyTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_weight="10"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang"
+            android:background="@drawable/shape_transparent_background"
+            android:text="Đăng ký" />
+
+        <TextView
+            android:id="@+id/txtTextView"
+            android:layout_marginTop="-10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@style/CustomTextBold"
+            android:gravity="center_horizontal|center_vertical|top"
+            android:textColor="@color/mauTrang"
+            android:layout_weight="10"
+            android:layout_marginBottom="15dp"
+            android:text="Mật khẩu phải có ít nhất 4 ký tự" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="46"
+        android:background="@drawable/transparenr"
+        android:text="Đăng nhập"
+        android:textAppearance="@style/CustomTextBold"
+        android:textColor="@color/mauTrang" />
+
+</LinearLayout>

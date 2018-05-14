@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.trungdung.foody.bottombar.Nha_Fragment.Nha_Fragment">
+    <item
+        android:id="@+id/action_Nha"
+        android:title=""
+        android:icon="@drawable/home_bottombar_selector" />
+    <item
+        android:id="@+id/action_BoSuuTap"
+        android:title=""
+        android:icon="@drawable/collection_bottombar_selector" />
+    <item
+        android:id="@+id/action_TimKiem"
+        android:title=""
+        android:icon="@drawable/search_bottombar_selector" />
+    <item
+        android:id="@+id/action_ThongBao"
+        android:title=""
+        android:icon="@drawable/bell_bottombar_selector" />
+    <item
+        android:id="@+id/action_TaiKhoan"
+        android:title=""
+        android:icon="@drawable/user_bottombar_selector" />
+
+</menu>

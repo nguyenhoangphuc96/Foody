@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mauXam"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="93">
+
+        <Button
+            android:text="Mới nhất"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnMoiNhatAnGi"
+            android:layout_weight="1"
+            android:background="@color/mauTrang"
+            android:textAppearance="@style/CustomText"
+            android:layout_marginRight="0.5dp"
+            android:drawableBottom="@drawable/iconxuongxam7" />
+
+        <Button
+            android:text="Danh mục"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnDanhMucAnGi"
+            android:layout_weight="1"
+            android:background="@color/mauTrang"
+            android:textAppearance="@style/CustomText"
+            android:drawableBottom="@drawable/iconxuongxam7" />
+
+        <Button
+            android:text="Thành phố"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btnThanhPhoAnGi"
+            android:layout_weight="1"
+            android:background="@color/mauTrang"
+            android:textAppearance="@style/CustomText"
+            android:layout_marginLeft="0.5dp"
+            android:drawableBottom="@drawable/iconxuongxam7" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:id="@+id/flHienThiNoiDungTabAnGi">
+
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="46"
+        android:background="@color/mauDo"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageButton
+            android:id="@+id/ibtnThoatManHinhThemDiaDiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="44"
+            android:background="@drawable/btn_topbar_click"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:gravity="center_vertical"
+            android:background="@color/mauDo"
+            android:text="Thêm địa điểm"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang" />
+
+        <Button
+            android:id="@+id/btnThemDiaDiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="44"
+            android:background="@drawable/btn_topbar_click"
+            android:text="Gửi"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:isScrollContainer="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="119.5">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Chọn tỉnh/Thành phố"
+                    android:background="@color/mauList"
+                    android:textAppearance="@style/CustomText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/txtChonQuocGiaThemDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/green_background"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="Vietnam"
+                        android:textAppearance="@style/CustomTextListView"
+                        android:textColor="@color/mauTrang"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtChonThanhPhoThemDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1.5dp"
+                        android:layout_marginRight="1.5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/green_background"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="TP.HCM"
+                        android:textAppearance="@style/CustomTextListView"
+                        android:textColor="@color/mauTrang"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtChonQuanThemDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/green_background"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:padding="3dp"
+                        android:text="Chọn quận"
+                        android:textAppearance="@style/CustomTextListView"
+                        android:textColor="@color/mauTrang"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="Thông tin bắt buộc"
+                    android:background="@color/mauList"
+                    android:textAppearance="@style/CustomText" />
+
+                <EditText
+                    android:id="@+id/edtNhapTenDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_home"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Thêm địa điểm *"
+                    android:inputType="textPersonName"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:textAppearance="@style/CustomText" />
+
+                <TextView
+                    android:id="@+id/txtNhapLoaiHinhDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="10"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_loaihinhdiadiem"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:maxLines="1"
+                    android:text="Loại hình địa điểm"
+                    android:textAppearance="@style/CustomText" />
+                <TextView
+                    android:id="@+id/txtChonDuongQuanThemDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="10"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_toado"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_arrow_right"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:maxLines="1"
+                    android:text="Chọn đường"
+                    android:textAppearance="@style/CustomText" />
+
+                <EditText
+                    android:id="@+id/edtNhapDiaChiDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_toado"
+                    android:drawablePadding="4dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Địa chỉ *"
+                    android:inputType="textPersonName"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAppearance="@style/CustomText" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:text="Thông tin khác"
+                    android:background="@color/mauList"
+                    android:textAppearance="@style/CustomText" />
+
+               <LinearLayout
+                   android:id="@+id/loViTriBanDo"
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="horizontal"
+                   android:layout_weight="10"
+                   android:weightSum="100"
+                   android:clickable="true">
+
+                   <TextView
+                       android:paddingTop="5dp"
+                       android:paddingBottom="5dp"
+                       android:id="@+id/textView12"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="60"
+                       android:drawableLeft="@drawable/ic_maybay"
+                       android:drawablePadding="3dp"
+                       android:gravity="center_vertical"
+                       android:paddingLeft="2dp"
+                       android:text="Vị trí bản đồ"
+                       android:textAppearance="@style/CustomText" />
+
+                   <TextView
+                       android:paddingTop="5dp"
+                       android:paddingBottom="5dp"
+                       android:id="@+id/txtHienThiToaDoDiaDiem"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="40"
+                       android:gravity="center_vertical|right"
+                       android:text="Lat 0.0-Long 0.0"
+                       android:drawableRight="@drawable/ic_arrow_right"
+                       android:textAppearance="@style/CustomTextListView" />
+
+               </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtNhapSDTDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/ic_dienthoai"
+                    android:drawablePadding="2dp"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:hint="Số điện thoại"
+                    android:inputType="phone"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:textAppearance="@style/CustomText"
+                    android:textStyle="normal|bold" />
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:weightSum="100"
+                    android:paddingLeft="4dp">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:drawableLeft="@drawable/ic_thoigian"
+                        android:gravity="center_vertical"
+                        android:text="Giờ mở cửa"
+                        android:textAppearance="@style/CustomText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="50">
+
+                        <TextView
+                            android:id="@+id/txtChonGioBatDauMoCuaDiaDiem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="14"
+                            android:background="@color/mauXanhLaCay"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="3dp"
+                            android:text="09:00 AM"
+                            android:textAppearance="@style/CustomTextListView"
+                            android:textColor="@color/mauTrang"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="22"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="đến"
+                            android:textAppearance="@style/CustomTextListView" />
+
+                        <TextView
+                            android:id="@+id/txtChonGioKetThucCuaDiaDiem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="5dp"
+                            android:layout_weight="14"
+                            android:background="@color/mauXanhLaCay"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:padding="3dp"
+                            android:text="09:00 PM"
+                            android:textAppearance="@style/CustomTextListView"
+                            android:textColor="@color/mauTrang"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="5dp"
+                    android:paddingLeft="4dp"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="10"
+                    android:orientation="horizontal"
+                    android:weightSum="90">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="62"
+                        android:drawableLeft="@drawable/ic_mucgia"
+                        android:gravity="center_vertical"
+                        android:text="Mức giá"
+                        android:textAppearance="@style/CustomText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="28"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:orientation="horizontal"
+                        android:weightSum="50">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="22"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="đến"
+                            android:textAppearance="@style/CustomTextListView" />
+
+                        <EditText
+                            android:id="@+id/edtNhapGiaThapNhatCuaDiaDiem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:ems="10"
+                            android:gravity="right"
+                            android:hint="Giá thấp nhất"
+                            android:textAppearance="@style/CustomTextListView"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:id="@+id/edtNhapGiaCaoNhatCuaDiaDiem"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:ems="10"
+                            android:hint="Giá cao nhất"
+                            android:textAppearance="@style/CustomTextListView"
+                            android:inputType="number" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingLeft="4dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="9.5"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <EditText
+                        android:id="@+id/edtMoTaDiaDiem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_weight="50"
+                        android:background="@null"
+                        android:drawableLeft="@drawable/ic_motadiadiem"
+                        android:ems="10"
+                        android:gravity="top"
+                        android:hint="Mô tả ngắn"
+                        android:inputType="textMultiLine"
+                        android:textAppearance="@style/CustomText" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/imgHinhAnhThemDiaDiem" />
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcvHienThiHinhAnhDiaDiem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="47"
+        android:background="@color/mauXam"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtnChonAnhDiaDiemTuThuVien"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_preview_black" />
+
+        <ImageButton
+            android:id="@+id/ibtnChupAnhDiaDiem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_post_review_black"
+            android:scaleType="centerCrop" />
+    </LinearLayout>
+</LinearLayout>

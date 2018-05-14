@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@drawable/img_dangnhap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="46"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/imgThoatManHinhDangNhapVoiEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="90"
+            android:background="@drawable/btn_clicked"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="Đăng nhập với Email"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="14"
+        android:weightSum="100"
+        android:paddingTop="40dp"
+        android:paddingBottom="120dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+
+        <EditText
+            android:id="@+id/etxtTaiKhoanMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang"
+            android:layout_weight="25"
+            android:hint="Email"
+            android:textColorHint="@color/mauTrang"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etxtMatKhauMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="25"
+            android:ems="10"
+            android:paddingLeft="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/mauTrang"
+            android:textAppearance="@style/CustomTextLarge"
+            android:textColor="@color/mauTrang" />
+
+        <Button
+            android:id="@+id/btnDangNhapBangMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14dp"
+            android:layout_weight="25"
+            android:textAppearance="@style/CustomTextHeader"
+            android:textColor="@color/mauTrang"
+            android:background="@drawable/shape_transparent_background"
+            android:text="Đăng nhập" />
+
+        <TextView
+            android:id="@+id/txtQuenMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:background="@drawable/btn_clicked"
+            android:textAppearance="@style/CustomTextBold"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/mauTrang"
+            android:layout_weight="25"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Bạn quên mật khẩu?" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDangKyTaiKhoan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:text="Đăng ký"
+        android:background="@null"
+        android:textAppearance="@style/CustomTextBold"
+        android:textColor="@color/mauTrang"/>
+
+</LinearLayout>

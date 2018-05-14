@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginTop="6dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/mauTrang"
+        android:layout_marginBottom="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:weightSum="1"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="7.5"
+                    android:background="@drawable/diem_quanan_border"
+                    android:textAlignment="center"
+                    android:paddingTop="7dp"
+                    android:textColor="@color/mauTrang"
+                    android:id="@+id/txtDiem"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.5"
+                android:orientation="vertical"
+                android:paddingLeft="7dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quán nhậu trường giang"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/mauDen"
+                    android:textSize="13sp"
+                    android:id="@+id/txtTenQuan"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="213 Nguyễn chí thanh, quận 3, Tp.HCM"
+                    android:textSize="9sp"
+                    android:id="@+id/txtDiaDiem"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginBottom="20dp"
+
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img_NoiDung_ODau"
+                android:scaleType="fitXY"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+
+</LinearLayout>
